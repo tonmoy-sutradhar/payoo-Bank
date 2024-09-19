@@ -2,17 +2,17 @@
 
 // Save Money by click save button
 document
-  .getElementById("save-money")
+  .getElementById("btn-cashout")
   .addEventListener("click", function (event) {
     event.preventDefault();
     // console.log("Button click done.");
-    const inputAddMoney = document.getElementById("input-add-money").value;
+    const inputAddMoney = document.getElementById("input-cashout-money").value;
     // console.log(inputAddMoney);
-    const inputpinNumber = document.getElementById("pin-number").value;
+    const inputpinNumber = document.getElementById("cashout-pin-number").value;
     // console.log(inputpinNumber);
 
-    if (inputpinNumber === "888") {
-      console.log("Adding your money in your account.");
+    if (inputpinNumber === "999") {
+      console.log("Cutting your money in your account.");
       const Balance = document.getElementById("account-balance").innerText;
       // console.log(Balance);
 
@@ -20,13 +20,13 @@ document
       const AccountBalance = parseFloat(Balance);
       const InputBalance = parseFloat(inputAddMoney);
       // console.log(AmountBalance);
-      const newBalance = AccountBalance + InputBalance;
+      const newBalance = AccountBalance - InputBalance;
       // console.log(newBalance);
 
       document.getElementById("account-balance").innerText = newBalance;
-      inputAddMoney.value = "";
-      inputpinNumber.value = "";
+      // inputAddMoney.value = "";
+      // inputpinNumber.value = "";
     } else {
-      alert("Failed to add Money!! please try again.");
+      alert("Failed to Cut Money!! please try again.");
     }
   });
