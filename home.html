@@ -29,7 +29,7 @@
             <div>
               <div class="stats shadow">
                 <div class="stat">
-                  <div class="stat-value">9400</div>
+                  <div id="account-balance" class="stat-value">9400</div>
                   <div class="stat-desc">Available balance</div>
                 </div>
               </div>
@@ -53,6 +53,7 @@
                     <span class="label-text">Amount</span>
                   </label>
                   <input
+                    id="input-add-money"
                     type="text"
                     placeholder="Amount"
                     class="input input-bordered"
@@ -64,20 +65,16 @@
                     <span class="label-text">PIN</span>
                   </label>
                   <input
+                    id="pin-number"
                     type="password"
-                    placeholder="PIN"
+                    placeholder="Enter PIN"
                     class="input input-bordered"
                     autocomplete="off"
                     required
                   />
-                  <label class="label">
-                    <a href="#" class="label-text-alt link link-hover"
-                      >Re Send PIN!!?</a
-                    >
-                  </label>
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Save</button>
+                  <button id="save-money" class="btn btn-primary">Save</button>
                 </div>
               </form>
             </div>
