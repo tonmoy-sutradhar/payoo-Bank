@@ -11,7 +11,7 @@ document
     const inputpinNumber = document.getElementById("cashout-pin-number").value;
     // console.log(inputpinNumber);
 
-    if (inputpinNumber === "999") {
+    if (inputpinNumber === "888") {
       console.log("Cutting your money in your account.");
       const Balance = document.getElementById("account-balance").innerText;
       // console.log(Balance);
