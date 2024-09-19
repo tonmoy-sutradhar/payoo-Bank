@@ -10,6 +10,15 @@ document
     console.log("Login button click.");
 
     // step-2: Get the phone number
-    const phoneNumber = document.getElementById("phn-num");
-    console.log(phoneNumber.value);
+    const phoneNumber = document.getElementById("phn-num").value;
+    const pinNumber = document.getElementById("pin-num").value;
+    // console.log(phoneNumber, pinNumber);
+
+    if (phoneNumber === "777" && pinNumber === "888") {
+      console.log("You are Logged In");
+      // window.location.href = "/home.html";
+      window.location.href = "/home.html";
+    } else {
+      alert("Enter the valid Phone Number and PIN");
+    }
   });
